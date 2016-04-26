@@ -1,0 +1,13 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"";
+"1";"100K";"R-EU_R0402";"R0402";"R2";"RESISTOR, European symbol";"";
+"1";"100n";"C-EUC0402";"C0402";"C1";"CAPACITOR, European symbol";"";
+"1";"1K";"R-EU_R0402";"R0402";"R3";"RESISTOR, European symbol";"";
+"2";"220u";"CPOL-EU153CLV-0810";"153CLV-0810";"C2, C3";"POLARIZED CAPACITOR, European symbol";"";
+"1";"282836-2";"282836-2";"282836-2";"U$1";"TYCO 282836-2 TERM BLOCK 2POS SIDE ENTRY 5MM EURISTYLE";"";
+"1";"4.99K";"R-EU_R0402";"R0402";"R1";"RESISTOR, European symbol";"";
+"1";"AL5812MP-13";"AL5812MP-13";"MSOP-8EP";"U1";"Diodes, Inc AL5812 LED Driver";"";
+"2";"ESC_POWER";"ESC_POWER";"ESC_POWER";"ESC1, ESC2";"";"";
+"1";"IRLML6346TR";"NMOS-FETSOT23";"SOT23";"Q1";"Generic NMOS FET";"";
+"2";"LTW-5630AZL";"LTW-5630AZL";"LITEON-5630";"LED1, LED2";"Lite-On 5x3 mm LTW-5630AZL White LED";"";
+"1";"M20-9990446";"PINHD-1X4";"1X04";"JP1";"PIN HEADER";"";
+"4";"MOUNT-PAD-ROUND2.8";"MOUNT-PAD-ROUND2.8";"2,8-PAD";"H1, H2, H3, H4";"MOUNTING PAD, round";"";
