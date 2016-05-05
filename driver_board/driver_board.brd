@@ -167,7 +167,7 @@
 <wire x1="36.3" y1="22" x2="22" y2="22" width="0" layer="20"/>
 <wire x1="22" y1="22" x2="21.7" y2="21.7" width="0" layer="20" curve="90"/>
 <wire x1="21.7" y1="21.7" x2="21.7" y2="16.01" width="0" layer="20"/>
-<text x="56.515" y="18.796" size="2.54" layer="21" rot="R90">OpenBLW</text>
+<text x="56.515" y="18.796" size="2.54" layer="21" rot="R90">Picam360</text>
 <text x="59.309" y="19.05" size="1.6764" layer="21" rot="R90">Driver Board</text>
 <text x="61.849" y="19.05" size="1.4224" layer="21" rot="R90">Rev.0.1</text>
 <text x="9.525" y="46.101" size="1.4224" layer="21">VCC</text>
