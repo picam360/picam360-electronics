@@ -10193,6 +10193,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="U$1" library="openblw" deviceset="MICROSD_SD_MODE" device="MOLEX"/>
 <part name="GND8" library="supply" deviceset="GND" device=""/>
 <part name="V1" library="supply" deviceset="+3V3" device=""/>
+<part name="JP3" library="openblw" deviceset="USB-ID" device="MICRO"/>
+<part name="P+2" library="supply1" deviceset="+5V" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10272,6 +10275,9 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="U$1" gate="G$1" x="289.56" y="60.96"/>
 <instance part="GND8" gate="1" x="309.88" y="38.1"/>
 <instance part="V1" gate="G$1" x="309.88" y="86.36"/>
+<instance part="JP3" gate="G$1" x="203.2" y="119.38" rot="R270"/>
+<instance part="P+2" gate="1" x="205.74" y="152.4"/>
+<instance part="GND11" gate="1" x="203.2" y="139.7" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -10324,6 +10330,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="175.26" y1="121.92" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="175.26" y1="124.46" x2="190.5" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="VBUS"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+<wire x1="205.74" y1="121.92" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -10480,6 +10491,11 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="302.26" y1="60.96" x2="309.88" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="60.96" x2="309.88" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="GND"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="203.2" y1="121.92" x2="203.2" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
