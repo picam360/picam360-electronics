@@ -10122,7 +10122,6 @@ DIN A3, landscape with location and doc. field</description>
 <part name="PORT13" library="dports" deviceset="NC" device=""/>
 <part name="PORT14" library="dports" deviceset="NC" device=""/>
 <part name="PORT15" library="dports" deviceset="NC" device=""/>
-<part name="V12" library="supply" deviceset="+3V3" device=""/>
 <part name="V13" library="supply" deviceset="+3V3" device=""/>
 <part name="V15" library="supply" deviceset="+1V8" device=""/>
 <part name="GND17" library="supply" deviceset="GND" device=""/>
@@ -10190,12 +10189,13 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-2X8" device=""/>
-<part name="U$1" library="openblw" deviceset="MICROSD_SD_MODE" device="MOLEX"/>
+<part name="U4" library="openblw" deviceset="MICROSD_SD_MODE" device="MOLEX"/>
 <part name="GND8" library="supply" deviceset="GND" device=""/>
 <part name="V1" library="supply" deviceset="+3V3" device=""/>
 <part name="JP3" library="openblw" deviceset="USB-ID" device="MICRO"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="V6" library="supply" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10238,7 +10238,6 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="JP1" gate="A" x="101.6" y="127" rot="R90"/>
 <instance part="GND15" gate="1" x="83.82" y="149.86" rot="R180"/>
 <instance part="V10" gate="1" x="78.74" y="149.86"/>
-<instance part="V12" gate="G$1" x="350.52" y="241.3" rot="R90"/>
 <instance part="V13" gate="G$1" x="350.52" y="220.98" rot="R90"/>
 <instance part="V15" gate="G$1" x="350.52" y="200.66" rot="R90"/>
 <instance part="GND17" gate="1" x="368.3" y="185.42"/>
@@ -10272,12 +10271,13 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="GND10" gate="1" x="157.48" y="119.38"/>
 <instance part="P+1" gate="1" x="193.04" y="124.46" rot="R270"/>
 <instance part="JP2" gate="A" x="53.34" y="127" rot="R90"/>
-<instance part="U$1" gate="G$1" x="289.56" y="60.96"/>
+<instance part="U4" gate="G$1" x="289.56" y="60.96"/>
 <instance part="GND8" gate="1" x="309.88" y="38.1"/>
 <instance part="V1" gate="G$1" x="309.88" y="86.36"/>
 <instance part="JP3" gate="G$1" x="203.2" y="119.38" rot="R270"/>
 <instance part="P+2" gate="1" x="205.74" y="152.4"/>
 <instance part="GND11" gate="1" x="203.2" y="139.7" rot="R180"/>
+<instance part="V6" gate="1" x="350.52" y="241.3" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -10335,6 +10335,11 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="JP3" gate="G$1" pin="VBUS"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="205.74" y1="121.92" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="V6" gate="1" pin="+5V"/>
+<wire x1="355.6" y1="241.3" x2="353.06" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -10487,7 +10492,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="157.48" y1="124.46" x2="157.48" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VSS"/>
+<pinref part="U4" gate="G$1" pin="VSS"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="302.26" y1="60.96" x2="309.88" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="60.96" x2="309.88" y2="40.64" width="0.1524" layer="91"/>
@@ -10584,13 +10589,8 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="350.52" y1="144.78" x2="340.36" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="V12" gate="G$1" pin="+3V3"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="353.06" y1="241.3" x2="355.6" y2="241.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="V13" gate="G$1" pin="+3V3"/>
 <pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="V13" gate="G$1" pin="+3V3"/>
 <wire x1="353.06" y1="220.98" x2="355.6" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -10612,7 +10612,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="45.72" y1="116.84" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="U4" gate="G$1" pin="VDD"/>
 <pinref part="V1" gate="G$1" pin="+3V3"/>
 <wire x1="302.26" y1="66.04" x2="309.88" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="66.04" x2="309.88" y2="83.82" width="0.1524" layer="91"/>
@@ -10995,42 +10995,42 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="SDX_D2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DATA2"/>
+<pinref part="U4" gate="G$1" pin="DATA2"/>
 <wire x1="302.26" y1="73.66" x2="322.58" y2="73.66" width="0.1524" layer="91"/>
 <label x="322.58" y="73.66" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDX_D3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CD/DATA3"/>
+<pinref part="U4" gate="G$1" pin="CD/DATA3"/>
 <wire x1="302.26" y1="71.12" x2="322.58" y2="71.12" width="0.1524" layer="91"/>
 <label x="322.58" y="71.12" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDX_CMD" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CMD"/>
+<pinref part="U4" gate="G$1" pin="CMD"/>
 <wire x1="302.26" y1="68.58" x2="322.58" y2="68.58" width="0.1524" layer="91"/>
 <label x="322.58" y="68.58" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDX_CLK" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CLK"/>
+<pinref part="U4" gate="G$1" pin="CLK"/>
 <wire x1="302.26" y1="63.5" x2="322.58" y2="63.5" width="0.1524" layer="91"/>
 <label x="322.58" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDX_D0" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DATA0"/>
+<pinref part="U4" gate="G$1" pin="DATA0"/>
 <wire x1="302.26" y1="58.42" x2="322.58" y2="58.42" width="0.1524" layer="91"/>
 <label x="322.58" y="58.42" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDX_D1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DATA1"/>
+<pinref part="U4" gate="G$1" pin="DATA1"/>
 <wire x1="302.26" y1="55.88" x2="322.58" y2="55.88" width="0.1524" layer="91"/>
 <label x="322.58" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
