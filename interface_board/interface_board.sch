@@ -441,6 +441,18 @@ reflow soldering</description>
 <rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
 <rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
 </package>
+<package name="BOURNS-SRN4018">
+<smd name="P$1" x="-1.525" y="0" dx="1.5" dy="3.5" layer="1"/>
+<smd name="P$2" x="1.525" y="0" dx="1.5" dy="3.5" layer="1"/>
+<wire x1="1" y1="-2" x2="-1" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1" y1="-2" x2="-2" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1" x2="-2" y2="1" width="0.127" layer="21"/>
+<wire x1="-2" y1="1" x2="-1" y2="2" width="0.127" layer="21"/>
+<wire x1="-1" y1="2" x2="1" y2="2" width="0.127" layer="21"/>
+<wire x1="1" y1="2" x2="2" y2="1" width="0.127" layer="21"/>
+<wire x1="2" y1="1" x2="2" y2="-1" width="0.127" layer="21"/>
+<wire x1="2" y1="-1" x2="1" y2="-2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="N_MOSFET">
@@ -574,6 +586,16 @@ reflow soldering</description>
 <text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="L-US">
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<text x="-6.604" y="2.032" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.032" y="-2.794" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="1" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -745,6 +767,22 @@ reflow soldering</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BOURNS-SRN4018" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="L-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BOURNS-SRN4018">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16275,11 +16313,10 @@ Copyright: Würth Elektronik</description>
 <part name="GND14" library="supply" deviceset="GND" device=""/>
 <part name="V9" library="supply" deviceset="+12V" device=""/>
 <part name="FB1" library="resistor" deviceset="L-EU" device="L5650M" value="HR2220V801R-10"/>
-<part name="C16" library="resistor" deviceset="C-EU" device="C0402" value="1u"/>
+<part name="C16" library="resistor" deviceset="C-EU" device="C0603" value="10u"/>
 <part name="R18" library="resistor" deviceset="R-EU_" device="R0402" value="1k"/>
 <part name="C17" library="resistor" deviceset="C-EU" device="C0402" value="10n"/>
 <part name="GND26" library="supply" deviceset="GND" device=""/>
-<part name="GND30" library="supply" deviceset="GND" device=""/>
 <part name="U$2" library="openblw" deviceset="282836-2" device=""/>
 <part name="L3" library="openblw" deviceset="SRP1250A" device="" value="SRP1245A-100M"/>
 <part name="FB4" library="resistor" deviceset="L-EU" device="L5650M" value="HR2220V801R-10"/>
@@ -16377,6 +16414,9 @@ Copyright: Würth Elektronik</description>
 <part name="K2" library="Wuerth_Elektronik_eiCan_Communication_Connectors_v2.2" deviceset="61400826021" device=""/>
 <part name="JP5" library="openblw" deviceset="PINHD-1X2" device=""/>
 <part name="R8" library="resistor" deviceset="R-EU_" device="R0402" value="12k"/>
+<part name="C5" library="resistor" deviceset="C-EU" device="C0603" value="22u"/>
+<part name="C6" library="resistor" deviceset="C-EU" device="C0603" value="22u"/>
+<part name="L1" library="openblw" deviceset="BOURNS-SRN4018" device="" value="SRN4018-100M(10u)"/>
 </parts>
 <sheets>
 <sheet>
@@ -16402,20 +16442,19 @@ Copyright: Würth Elektronik</description>
 <instance part="H3" gate="G$1" x="25.4" y="60.96"/>
 <instance part="H4" gate="G$1" x="25.4" y="55.88"/>
 <instance part="JP1" gate="A" x="327.66" y="152.4" rot="MR270"/>
-<instance part="IC1" gate="A" x="299.72" y="215.9" smashed="yes">
-<attribute name="NAME" x="302.26" y="208.28" size="1.778" layer="95"/>
-<attribute name="VALUE" x="292.1" y="220.98" size="1.778" layer="96"/>
+<instance part="IC1" gate="A" x="271.78" y="215.9" smashed="yes">
+<attribute name="NAME" x="274.32" y="208.28" size="1.778" layer="95"/>
+<attribute name="VALUE" x="264.16" y="220.98" size="1.778" layer="96"/>
 </instance>
 <instance part="GND9" gate="1" x="226.06" y="223.52" rot="R90"/>
-<instance part="V1" gate="1" x="309.88" y="226.06"/>
-<instance part="GND14" gate="1" x="299.72" y="198.12"/>
+<instance part="V1" gate="1" x="322.58" y="226.06"/>
+<instance part="GND14" gate="1" x="271.78" y="198.12"/>
 <instance part="V9" gate="1" x="256.54" y="226.06"/>
 <instance part="FB1" gate="G$1" x="213.36" y="215.9" rot="R90"/>
-<instance part="C16" gate="G$1" x="248.92" y="210.82"/>
+<instance part="C16" gate="G$1" x="256.54" y="210.82"/>
 <instance part="R18" gate="G$1" x="223.52" y="208.28" rot="R270"/>
 <instance part="C17" gate="G$1" x="223.52" y="198.12"/>
 <instance part="GND26" gate="1" x="223.52" y="187.96"/>
-<instance part="GND30" gate="1" x="248.92" y="198.12"/>
 <instance part="U$2" gate="G$1" x="195.58" y="200.66" rot="MR0"/>
 <instance part="L3" gate="G$1" x="236.22" y="215.9"/>
 <instance part="FB4" gate="G$1" x="213.36" y="223.52" rot="R90"/>
@@ -16424,7 +16463,7 @@ Copyright: Würth Elektronik</description>
 <instance part="V7" gate="G$1" x="58.42" y="93.98" rot="R180"/>
 <instance part="GND11" gate="1" x="58.42" y="137.16" rot="R180"/>
 <instance part="V3" gate="1" x="63.5" y="236.22"/>
-<instance part="U$4" gate="G$1" x="38.1" y="218.44"/>
+<instance part="U$4" gate="G$1" x="38.1" y="218.44" rot="MR0"/>
 <instance part="GND4" gate="1" x="35.56" y="241.3" rot="R180"/>
 <instance part="GND5" gate="1" x="254" y="58.42"/>
 <instance part="GND7" gate="1" x="228.6" y="53.34"/>
@@ -16449,6 +16488,9 @@ Copyright: Würth Elektronik</description>
 <instance part="C4" gate="G$1" x="223.52" y="111.76" rot="R180"/>
 <instance part="V4" gate="1" x="190.5" y="68.58"/>
 <instance part="GND10" gate="1" x="132.08" y="10.16"/>
+<instance part="C5" gate="G$1" x="281.94" y="210.82"/>
+<instance part="C6" gate="G$1" x="320.04" y="210.82"/>
+<instance part="L1" gate="G$1" x="302.26" y="215.9"/>
 </instances>
 <busses>
 </busses>
@@ -16506,19 +16548,26 @@ Copyright: Würth Elektronik</description>
 <pinref part="H4" gate="G$1" pin="MOUNT"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="A" pin="GND"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="299.72" y1="208.28" x2="299.72" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND26" gate="1" pin="GND"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="190.5" x2="223.52" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND30" gate="1" pin="GND"/>
 <pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="248.92" y1="200.66" x2="248.92" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="GND"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="256.54" y1="203.2" x2="256.54" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="208.28" x2="271.78" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="271.78" y1="203.2" x2="271.78" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="205.74" x2="281.94" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="203.2" x2="271.78" y2="203.2" width="0.1524" layer="91"/>
+<junction x="271.78" y="203.2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="320.04" y1="205.74" x2="320.04" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="203.2" x2="281.94" y2="203.2" width="0.1524" layer="91"/>
+<junction x="281.94" y="203.2"/>
+<wire x1="256.54" y1="203.2" x2="271.78" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="FB4" gate="G$1" pin="2"/>
@@ -16540,9 +16589,9 @@ Copyright: Würth Elektronik</description>
 <wire x1="101.6" y1="132.08" x2="58.42" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="CON01"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="35.56" y1="228.6" x2="35.56" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="CON02"/>
+<wire x1="35.56" y1="238.76" x2="35.56" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -16564,6 +16613,10 @@ Copyright: Würth Elektronik</description>
 <wire x1="332.74" y1="154.94" x2="332.74" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="160.02" x2="322.58" y2="160.02" width="0.1524" layer="91"/>
 <junction x="322.58" y="160.02"/>
+<pinref part="JP1" gate="A" pin="19"/>
+<wire x1="340.36" y1="154.94" x2="340.36" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="160.02" x2="332.74" y2="160.02" width="0.1524" layer="91"/>
+<junction x="332.74" y="160.02"/>
 </segment>
 <segment>
 <wire x1="327.66" y1="147.32" x2="327.66" y2="114.3" width="0.1524" layer="91"/>
@@ -16654,10 +16707,14 @@ Copyright: Würth Elektronik</description>
 </net>
 <net name="+5V" class="5">
 <segment>
-<pinref part="IC1" gate="A" pin="OUT"/>
 <pinref part="V1" gate="1" pin="+5V"/>
-<wire x1="307.34" y1="215.9" x2="309.88" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="215.9" x2="309.88" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="215.9" x2="322.58" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="215.9" x2="322.58" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="320.04" y1="213.36" x2="320.04" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="309.88" y1="215.9" x2="320.04" y2="215.9" width="0.1524" layer="91"/>
+<junction x="320.04" y="215.9"/>
 </segment>
 <segment>
 <pinref part="V2" gate="1" pin="+5V"/>
@@ -16690,17 +16747,16 @@ Copyright: Würth Elektronik</description>
 </net>
 <net name="+12V" class="5">
 <segment>
-<wire x1="241.3" y1="215.9" x2="248.92" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="215.9" x2="256.54" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="215.9" x2="256.54" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="213.36" x2="248.92" y2="215.9" width="0.1524" layer="91"/>
-<junction x="248.92" y="215.9"/>
+<wire x1="256.54" y1="213.36" x2="256.54" y2="215.9" width="0.1524" layer="91"/>
+<junction x="256.54" y="215.9"/>
 <pinref part="V9" gate="1" pin="+12V"/>
 <wire x1="256.54" y1="223.52" x2="256.54" y2="215.9" width="0.1524" layer="91"/>
 <junction x="256.54" y="215.9"/>
 <pinref part="L3" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="A" pin="IN"/>
-<wire x1="256.54" y1="215.9" x2="292.1" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="215.9" x2="264.16" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
@@ -16715,9 +16771,9 @@ Copyright: Würth Elektronik</description>
 <pinref part="V3" gate="1" pin="+12V"/>
 <wire x1="63.5" y1="231.14" x2="63.5" y2="233.68" width="0.1524" layer="91"/>
 <junction x="63.5" y="231.14"/>
-<pinref part="U$4" gate="G$1" pin="CON02"/>
-<wire x1="40.64" y1="228.6" x2="40.64" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="231.14" x2="63.5" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="CON01"/>
+<wire x1="40.64" y1="231.14" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="81.28" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
@@ -16939,6 +16995,17 @@ Copyright: Würth Elektronik</description>
 <wire x1="81.28" y1="129.54" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="129.54" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="5">
+<segment>
+<pinref part="IC1" gate="A" pin="OUT"/>
+<wire x1="279.4" y1="215.9" x2="281.94" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="281.94" y1="213.36" x2="281.94" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="281.94" y1="215.9" x2="294.64" y2="215.9" width="0.1524" layer="91"/>
+<junction x="281.94" y="215.9"/>
 </segment>
 </net>
 </nets>
