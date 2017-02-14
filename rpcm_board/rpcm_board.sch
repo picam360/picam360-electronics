@@ -10613,7 +10613,7 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="V6" library="supply" deviceset="+5V" device=""/>
 <part name="V9" library="supply" deviceset="+3V3" device=""/>
 <part name="JP4" library="openblw" deviceset="PINHD-1X2" device=""/>
-<part name="HDMI" library="raspi" deviceset="HDMI" device=""/>
+<part name="HDMI" library="raspi" deviceset="HDMI" device="" value="10029449-111RLF"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="D2" library="diode" deviceset="BAV199" device="" value="BAV99"/>
 <part name="D3" library="diode" deviceset="BAV199" device="" value="BAV99"/>

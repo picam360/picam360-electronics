@@ -4498,7 +4498,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.0638" y="8.5488" size="0.6096" layer="25" ratio="10"/>
 <attribute name="VALUE" x="13.14" y="3.545" size="1.27" layer="27"/>
 </element>
-<element name="HDMI" library="raspi" package="HDMI" value="HDMI" x="5.5" y="16.3" smashed="yes" rot="MR90">
+<element name="HDMI" library="raspi" package="HDMI" value="10029449-111RLF" x="5.5" y="16.3" smashed="yes" rot="MR90">
 <attribute name="NAME" x="12.04" y="16.54" size="1.016" layer="26" rot="MR90"/>
 </element>
 <element name="D2" library="diode" package="SOT23" value="BAV99" x="12.1" y="26.9" smashed="yes" rot="MR180">
