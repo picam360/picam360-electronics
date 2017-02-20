@@ -4494,9 +4494,9 @@ design rules under a new name.</description>
 <element name="JP3" library="openblw" package="USB-MICRO" value="USB-IDMICRO" x="70.5" y="13.3" rot="R90">
 <attribute name="PROD_ID" value="CONN-09505" x="70.5" y="13.3" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="JP4" library="openblw" package="1X02" value="" x="15.68" y="6.72" smashed="yes">
-<attribute name="NAME" x="13.0638" y="8.5488" size="0.6096" layer="25" ratio="10"/>
-<attribute name="VALUE" x="13.14" y="3.545" size="1.27" layer="27"/>
+<element name="JP4" library="openblw" package="1X02" value="" x="15.68" y="7.31" smashed="yes">
+<attribute name="NAME" x="13.3638" y="8.8388" size="0.6096" layer="25" ratio="10"/>
+<attribute name="VALUE" x="13.14" y="4.135" size="1.27" layer="27"/>
 </element>
 <element name="HDMI" library="raspi" package="HDMI" value="10029449-111RLF" x="5.5" y="16.3" smashed="yes" rot="MR90">
 <attribute name="NAME" x="12.04" y="16.54" size="1.016" layer="26" rot="MR90"/>
@@ -4609,7 +4609,7 @@ design rules under a new name.</description>
 <vertex x="5.7" y="37.3"/>
 <vertex x="2" y="37.3"/>
 <vertex x="2" y="11.5"/>
-<vertex x="11.8" y="11.6"/>
+<vertex x="11.9" y="11.6"/>
 <vertex x="11.9" y="1.7"/>
 <vertex x="56.3" y="1.7"/>
 </polygon>
@@ -4786,9 +4786,9 @@ design rules under a new name.</description>
 <via x="19" y="6.5" extent="1-16" drill="0.3"/>
 <via x="38.1" y="9.7" extent="1-16" drill="0.3"/>
 <via x="19.67" y="12.34" extent="1-16" drill="0.3"/>
-<via x="14.2" y="10" extent="1-16" drill="0.3"/>
+<via x="14.3" y="10" extent="1-16" drill="0.3"/>
 <via x="24.4" y="13.9" extent="1-16" drill="0.3"/>
-<via x="12.7" y="8.1" extent="1-16" drill="0.3"/>
+<via x="12.9" y="8.4" extent="1-16" drill="0.3"/>
 <via x="38.2" y="14.9" extent="1-16" drill="0.3"/>
 <via x="23.9" y="38" extent="1-16" drill="0.3"/>
 <via x="34.5" y="13.3" extent="1-16" drill="0.3"/>
@@ -4797,10 +4797,10 @@ design rules under a new name.</description>
 <via x="31.5" y="6.2" extent="1-16" drill="0.3"/>
 <via x="62" y="18" extent="1-16" drill="0.3"/>
 <via x="64.4" y="18" extent="1-16" drill="0.3"/>
-<via x="12.7" y="5.9" extent="1-16" drill="0.3"/>
-<via x="14.4" y="8.5" extent="1-16" drill="0.3"/>
+<via x="13.1" y="5.9" extent="1-16" drill="0.3"/>
+<via x="17.1" y="5.6" extent="1-16" drill="0.3"/>
 <via x="22.6" y="15.5" extent="1-16" drill="0.3"/>
-<via x="17.1" y="8.5" extent="1-16" drill="0.3"/>
+<via x="18.4" y="8.6" extent="1-16" drill="0.3"/>
 <via x="64.1" y="21" extent="1-16" drill="0.3"/>
 <via x="7.3" y="12.6" extent="1-16" drill="0.3"/>
 <via x="4.1" y="5.7" extent="1-16" drill="0.3"/>
@@ -4851,7 +4851,7 @@ design rules under a new name.</description>
 <wire x1="24.2" y1="35.906" x2="24.2" y2="37.1" width="0.2" layer="1"/>
 <wire x1="24.2" y1="37.1" x2="24.2" y2="37.3" width="0.2" layer="1"/>
 <via x="38.3" y="12.1" extent="1-16" drill="0.3"/>
-<via x="18.9" y="9" extent="1-16" drill="0.3"/>
+<via x="18.8" y="10.1" extent="1-16" drill="0.3"/>
 <via x="37.9" y="7.1" extent="1-16" drill="0.3"/>
 <via x="31.5" y="3.6" extent="1-16" drill="0.3"/>
 <via x="17.99" y="14.91" extent="1-16" drill="0.3"/>
@@ -4982,7 +4982,7 @@ design rules under a new name.</description>
 <via x="33.5" y="6.2" extent="1-16" drill="0.3"/>
 <via x="24.2" y="11.3" extent="1-16" drill="0.3"/>
 <via x="33.5" y="17.6" extent="1-16" drill="0.3"/>
-<via x="12.7" y="9.9" extent="1-16" drill="0.3"/>
+<via x="12.8" y="9.8" extent="1-16" drill="0.3"/>
 <via x="16.6" y="13.4" extent="1-16" drill="0.3"/>
 <via x="10.6" y="22.1" extent="1-16" drill="0.3"/>
 <via x="6.5" y="28.6" extent="1-16" drill="0.3"/>
@@ -5300,11 +5300,11 @@ design rules under a new name.</description>
 <wire x1="14.3968" y1="31.1" x2="14.2214" y2="31.1" width="0.254" layer="16"/>
 <wire x1="14.3968" y1="31.1" x2="14.3968" y2="11.51583125" width="0.254" layer="1"/>
 <wire x1="14.3968" y1="11.51583125" x2="15.4768" y2="10.43583125" width="0.254" layer="1"/>
-<wire x1="15.4768" y1="10.43583125" x2="15.4768" y2="6.72" width="0.254" layer="1"/>
-<wire x1="15.4768" y1="6.72" x2="15.4768" y2="5.7" width="0.254" layer="1"/>
+<wire x1="15.4768" y1="10.43583125" x2="15.4768" y2="7.31" width="0.254" layer="1"/>
+<wire x1="15.4768" y1="7.31" x2="15.4768" y2="5.7" width="0.254" layer="1"/>
 <wire x1="15.4768" y1="5.7" x2="15.355" y2="5.5782" width="0.254" layer="1"/>
 <wire x1="15.355" y1="5.5782" x2="15.355" y2="4.15" width="0.254" layer="1"/>
-<wire x1="14.41" y1="6.72" x2="15.4768" y2="6.72" width="0.254" layer="1"/>
+<wire x1="14.41" y1="7.31" x2="15.4768" y2="7.31" width="0.254" layer="1"/>
 </signal>
 <signal name="USB_D_P" class="3">
 <contactref element="PCB1" pad="165"/>
@@ -5322,11 +5322,11 @@ design rules under a new name.</description>
 <wire x1="14.8032" y1="31.1" x2="14.9786" y2="31.1" width="0.254" layer="16"/>
 <wire x1="14.8032" y1="31.1" x2="14.8032" y2="11.68416875" width="0.254" layer="1"/>
 <wire x1="14.8032" y1="11.68416875" x2="15.8832" y2="10.60416875" width="0.254" layer="1"/>
-<wire x1="15.8832" y1="10.60416875" x2="15.8832" y2="6.72" width="0.254" layer="1"/>
-<wire x1="15.8832" y1="6.72" x2="15.8832" y2="5.7" width="0.254" layer="1"/>
+<wire x1="15.8832" y1="10.60416875" x2="15.8832" y2="7.31" width="0.254" layer="1"/>
+<wire x1="15.8832" y1="7.31" x2="15.8832" y2="5.7" width="0.254" layer="1"/>
 <wire x1="15.8832" y1="5.7" x2="16.005" y2="5.5782" width="0.254" layer="1"/>
 <wire x1="16.005" y1="5.5782" x2="16.005" y2="4.15" width="0.254" layer="1"/>
-<wire x1="16.95" y1="6.72" x2="15.8832" y2="6.72" width="0.254" layer="1"/>
+<wire x1="16.95" y1="7.31" x2="15.8832" y2="7.31" width="0.254" layer="1"/>
 </signal>
 <signal name="CAM0_D0_P" class="2">
 <contactref element="PCB1" pad="136"/>
