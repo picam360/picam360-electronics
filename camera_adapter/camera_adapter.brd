@@ -2586,7 +2586,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="11.6094" y="7.0606" size="1.016" layer="25" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="11.5332" y="1.498" size="1.016" layer="27" ratio="10" rot="SR0" display="off"/>
 </element>
-<element name="LOGO1" library="openblw" package="OHMYDIGIFAB_LOGO" value="" x="21.562" y="11.753" smashed="yes"/>
+<element name="LOGO1" library="openblw" package="OHMYDIGIFAB_LOGO" value="" x="7.783" y="8.218" smashed="yes"/>
 </elements>
 <signals>
 <signal name="N$1">
