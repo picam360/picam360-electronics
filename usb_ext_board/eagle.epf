@@ -449,7 +449,7 @@ Sheet="1"
 
 [Win_2]
 Type="Control Panel"
-Loc="85 91 1284 690"
+Loc="640 252 1839 851"
 State=2
 Number=0
 
