@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -10543,12 +10544,12 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="D6" library="diode" deviceset="BAV199" device="" value="BAV99"/>
-<part name="R10" library="resistor" deviceset="R-EU_" device="R0402" value="100k"/>
+<part name="R10" library="resistor" deviceset="R-EU_" device="R0402" value="100K"/>
 <part name="Q4" library="openblw" deviceset="DMG1012T" device="" value="DMG1012T"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
-<part name="R18" library="resistor" deviceset="R-EU_" device="R0402" value="1k8"/>
-<part name="R19" library="resistor" deviceset="R-EU_" device="R0402" value="1k8"/>
+<part name="R18" library="resistor" deviceset="R-EU_" device="R0402" value="1.8K"/>
+<part name="R19" library="resistor" deviceset="R-EU_" device="R0402" value="1.8K"/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="R20" library="resistor" deviceset="R-EU_" device="R0402" value="1M"/>
