@@ -360,11 +360,11 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="JP2" library="pinhead+" package="1X01" value="" x="10.922" y="4.699" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="12.192" y="1.524" size="1.27" layer="28" rot="MR0"/>
+<element name="JP2" library="pinhead+" package="1X01" value="" x="10.922" y="4.699" smashed="yes">
+<attribute name="VALUE" x="9.652" y="1.524" size="1.27" layer="27"/>
 </element>
-<element name="JP3" library="pinhead+" package="1X01" value="" x="10.922" y="2.159" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="12.192" y="-1.016" size="1.27" layer="28" rot="MR0"/>
+<element name="JP3" library="pinhead+" package="1X01" value="" x="10.922" y="2.159" smashed="yes">
+<attribute name="VALUE" x="9.652" y="-1.016" size="1.27" layer="27"/>
 </element>
 <element name="X1" library="usb" package="USB-A-PCB" value="USBPCB" x="5" y="6"/>
 <element name="JP1" library="pinhead+" package="1X01" value="" x="10.922" y="7.239" smashed="yes">
@@ -378,26 +378,24 @@ design rules under a new name.</description>
 <signal name="USB_P">
 <contactref element="X1" pad="USB_P"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="10.922" y1="7.239" x2="10.683" y2="7" width="0.8128" layer="1" curve="-90"/>
-<wire x1="10.683" y1="7" x2="5.3" y2="7" width="0.8128" layer="1"/>
+<wire x1="10.922" y1="7.239" x2="10.683" y2="7" width="1.016" layer="1"/>
+<wire x1="10.683" y1="7" x2="5.3" y2="7" width="1.016" layer="1"/>
 </signal>
 <signal name="USB_N">
 <contactref element="X1" pad="USB_M"/>
 <contactref element="JP2" pad="1"/>
-<wire x1="10.922" y1="4.699" x2="10.621" y2="5" width="0.8128" layer="1" curve="90"/>
-<wire x1="10.621" y1="5" x2="5.3" y2="5" width="0.8128" layer="1"/>
+<wire x1="10.922" y1="4.699" x2="10.621" y2="5" width="1.016" layer="1"/>
+<wire x1="10.621" y1="5" x2="5.3" y2="5" width="1.016" layer="1"/>
 </signal>
 <signal name="5V">
 <contactref element="X1" pad="5V"/>
 <contactref element="JP3" pad="1"/>
-<wire x1="10.922" y1="2.159" x2="10.581" y2="2.5" width="0.8128" layer="1" curve="90"/>
-<wire x1="10.581" y1="2.5" x2="4.8" y2="2.5" width="0.8128" layer="1"/>
+<wire x1="10.922" y1="2.159" x2="10.581" y2="2.5" width="1.016" layer="1"/>
+<wire x1="10.581" y1="2.5" x2="4.8" y2="2.5" width="1.016" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="X1" pad="GND"/>
 <contactref element="JP4" pad="1"/>
-<wire x1="10.922" y1="9.779" x2="10.643" y2="9.5" width="0.8128" layer="1" curve="-90"/>
-<wire x1="10.643" y1="9.5" x2="4.8" y2="9.5" width="0.8128" layer="1"/>
 <polygon width="0.2" layer="16">
 <vertex x="0" y="0"/>
 <vertex x="13" y="0"/>
@@ -410,6 +408,8 @@ design rules under a new name.</description>
 <vertex x="13" y="12"/>
 <vertex x="0" y="12"/>
 </polygon>
+<wire x1="10.922" y1="9.779" x2="10.643" y2="9.5" width="0.8128" layer="1"/>
+<wire x1="10.643" y1="9.5" x2="4.8" y2="9.5" width="0.8128" layer="1"/>
 </signal>
 </signals>
 </board>
