@@ -21,5 +21,12 @@ UsedLibrary="/Users/takuma/external_lbrs/pinhead+.lbr"
 UsedLibrary="/Users/takuma/external_lbrs/pololu.lbr"
 UsedLibrary="/Users/takuma/github/picam360-electronics/lbr/openblw.lbr"
 
+[Win_1]
+Type="Control Panel"
+Loc="186 174 1385 813"
+State=2
+Number=0
+
 [Desktop]
-Screen="1366 768"
+Screen="640 480"
+Window="Win_1"
