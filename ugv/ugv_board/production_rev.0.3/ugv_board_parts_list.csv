@@ -1,0 +1,16 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"";
+"1";"";"JACK-PLUG0";"SPC4077";"J1";"DC POWER JACK";"";
+"4";"";"PINHD-1X4M";"1X04M";"JP1, JP2, JP3, JP4";"PIN HEADER";"";
+"2";"";"PINHD-2X3";"2X03";"JP5, JP6";"PIN HEADER";"";
+"9";"100n";"C-EUC0402";"C0402";"C1, C2, C4, C5, C6, C7, C8, C9, C10";"CAPACITOR, European symbol";"";
+"2";"10k";"R-EU_R0402";"R0402";"R6, R7";"RESISTOR, European symbol";"";
+"1";"10u";"C-EUC0603";"C0603";"C16";"CAPACITOR, European symbol";"";
+"1";"1N34A";"1N34A";"DO07";"D1";"GERMANIUM DIODE";"";
+"1";"1uF";"C-EUC0402";"C0402";"C3";"CAPACITOR, European symbol";"";
+"2";"22u";"C-EUC0603";"C0603";"C11, C12";"CAPACITOR, European symbol";"";
+"4";"DRV8835";"DRV8835";"WSON_2X3";"U1, U3, U4, U5";"DRV8835 DUAL LOW VOLTAGE H-BRIDGE IC";"";
+"1";"MPU-9250";"MPU-9250";"LEAD-QFN24";"U2";"";"";
+"1";"RPI3";"RPI3";"RPI3";"PCB1";"Device for Raspberry Pi 3 board created by Dave Young for www.element14.com";"";
+"4";"SOLDERJUMPERNC";"SOLDERJUMPERNC";"SJ_2S";"SJ1, SJ2, SJ3, SJ4";"Solder Jumper";"";
+"1";"SRN4018-100M(10u)";"BOURNS-SRN4018";"BOURNS-SRN4018";"L1";"";"";
+"1";"V7805-1000";"VR_1OUTXX";"DIP_3PIN";"IC1";"VOLTAGE REGULATOR";"";
