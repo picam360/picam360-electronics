@@ -8716,14 +8716,14 @@ by exp-project-lbr.ulp</description>
 <wire x1="187.96" y1="205.74" x2="165.1" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USB_5V" class="0">
+<net name="USB_D_N" class="3">
 <segment>
 <pinref part="J2" gate="G$1" pin="D-"/>
 <wire x1="91.44" y1="220.98" x2="66.04" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="USB_D-" class="0">
+<net name="USB_D_P" class="3">
 <segment>
 <pinref part="J2" gate="G$1" pin="D+"/>
 <wire x1="91.44" y1="218.44" x2="66.04" y2="218.44" width="0.1524" layer="91"/>

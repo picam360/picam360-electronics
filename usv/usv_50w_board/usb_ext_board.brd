@@ -151,9 +151,9 @@ micro usb hight 2.5mm</text>
 <text x="1.099" y="7.53" size="1.27" layer="21">Picam360</text>
 <text x="1.099" y="6.132" size="1.016" layer="21">USB Ext</text>
 <text x="1.068" y="4.737" size="1.016" layer="21">Rev.0.1</text>
-<wire x1="1" y1="0" x2="9" y2="-0.1" width="0" layer="20"/>
-<wire x1="9" y1="-0.1" x2="10" y2="0.9" width="0" layer="20" curve="90"/>
-<wire x1="10" y1="0.9" x2="10" y2="12.5" width="0" layer="20"/>
+<wire x1="1" y1="0" x2="9" y2="0" width="0" layer="20"/>
+<wire x1="9" y1="0" x2="10" y2="1" width="0" layer="20" curve="90"/>
+<wire x1="10" y1="1" x2="10" y2="12.5" width="0" layer="20"/>
 <wire x1="10" y1="12.5" x2="9" y2="13.5" width="0" layer="20" curve="90"/>
 <wire x1="9" y1="13.5" x2="1" y2="13.5" width="0" layer="20"/>
 <wire x1="1" y1="13.5" x2="0" y2="12.5" width="0" layer="20" curve="90"/>
